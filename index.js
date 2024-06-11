@@ -1,7 +1,9 @@
 class App extends React.Component {
     render() {
         return (
-            <div>React app</div>
+            <div>
+                <SlotMachine />
+            </div>
         )
     }
 };
