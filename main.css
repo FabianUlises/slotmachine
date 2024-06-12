@@ -5,6 +5,7 @@
 }
 html {
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 body {
     background-color: purple;
@@ -13,14 +14,19 @@ body {
     justify-content: center;
 }
 img {
-    inline-size: 100%;
+    inline-size: 4rem;
+    max-block-size: 4rem;
+    object-fit: cover;
 }
 .slot {
     background-color: orange;
     inline-size: 100%;
-    max-inline-size: 10rem;
     text-align: center;
-}
-.slot__img {
-    display: flex;
+    }
+    .slot__img {
+        block-size: 5rem;
+        display: flex;
+    :not(:last-child) {
+        border-right: 2px solid green;
+    }
 }
