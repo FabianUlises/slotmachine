@@ -23,6 +23,7 @@ class SlotMachine extends React.Component {
                     img2={slotImg[randomNum2]}
                     img3={slotImg[randomNum3]}
                     outcome={outcome}
+                    imgArr={slotImg}
                  />
             </div>
         )
