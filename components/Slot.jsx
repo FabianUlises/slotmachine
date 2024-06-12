@@ -11,7 +11,19 @@ class Slot extends React.Component {
                     <img src={this.props.slotImg[randomNum3]} />
                 </div>
                 <div className="slot__text">
-                    You lose!
+                    {
+                        randomNum1 === randomNum2 && randomNum1 === randomNum3 ? 
+                            (
+                                <div>
+                                    <h3>You Win!</h3>
+                                </div>
+                            )
+                            : (
+                                <div>
+                                    <h3>You Lose!</h3>
+                                </div>
+                            )
+                    }
                 </div>
             </div>
         )
