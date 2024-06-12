@@ -9,6 +9,8 @@ html {
 body {
     background-color: purple;
     overflow-x: hidden;
+    display: flex;
+    justify-content: center;
 }
 img {
     inline-size: 100%;
