@@ -1,10 +1,12 @@
 class Slot extends React.Component {
     render() {
         // Getting game outcome text depending on images generated
-        const outcome = this.props.img1 === this.props.img2 && this.props.img1 === this.props.img3 ? <h4>You Win!</h4> : <h4>You Lose!</h4>;
+        const outcome = this.props.img1 === this.props.img2 && this.props.img1 === this.props.img3;
         return (
             // Start of slot container
-            <div className="slot">
+            <div 
+            className={`slot ${outcome ? 'pulsate' : null}`}
+            >
                 {/* Start of slot image */}
                 <div className="slot__img">
                     {/* Setting image src to random array index. If image is index 0 I'm giving it a class to lower width size */}
@@ -15,7 +17,7 @@ class Slot extends React.Component {
                 {/* End of slot image */}
                 {/* Start of slot text */}
                 <div className="slot__text">
-                    {outcome}
+                    {outcome ? <h4>You Win!</h4> : <h4>You Lose!</h4>}
                 </div>
                 {/* End of slot text */}
             </div>

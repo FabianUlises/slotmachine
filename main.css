@@ -46,3 +46,19 @@ img {
 .large-cherry {
     inline-size: 80%;
 }
+/* Class & animatino for winner */
+@keyframes pulsate {
+    0% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.pulsate {
+    animation: pulsate 750ms infinite;
+}
