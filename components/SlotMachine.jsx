@@ -5,38 +5,34 @@ class SlotMachine extends React.Component {
         const randomNum1 = Math.floor(Math.random() * slotImg.length);
         const randomNum2 = Math.floor(Math.random() * slotImg.length);
         const randomNum3 = Math.floor(Math.random() * slotImg.length);
-        const outcome = randomNum1 === randomNum2 && randomNum1 === randomNum3 ? 
-                (
-                    // <div>
-                        <h3>You Win!</h3>
-                    // </div>
-                )
-                : (
-                    // <div>
-                        <h3>You Lose!</h3>
-                    // </div>
-                )
+        const randomNum4 = Math.floor(Math.random() * slotImg.length);
+        const randomNum5 = Math.floor(Math.random() * slotImg.length);
+        const randomNum6 = Math.floor(Math.random() * slotImg.length);
+        const randomNum7 = Math.floor(Math.random() * slotImg.length);
+        const randomNum8 = Math.floor(Math.random() * slotImg.length);
+        const randomNum9 = Math.floor(Math.random() * slotImg.length);
+        // const randomNum = () => {
+        //     const num = Math.floor(Math.random() * slotImg.length)
+        //     return num;
+        // };
         return (
             <div>
                 <Slot
                     img1={slotImg[randomNum1]}
                     img2={slotImg[randomNum2]}
                     img3={slotImg[randomNum3]}
-                    outcome={outcome}
                     imgArr={slotImg}
                  />
                 <Slot
-                    img1={slotImg[randomNum1]}
-                    img2={slotImg[randomNum2]}
-                    img3={slotImg[randomNum3]}
-                    outcome={outcome}
+                    img1={slotImg[randomNum4]}
+                    img2={slotImg[randomNum5]}
+                    img3={slotImg[randomNum6]}
                     imgArr={slotImg}
                  />
                 <Slot
-                    img1={slotImg[randomNum1]}
-                    img2={slotImg[randomNum2]}
-                    img3={slotImg[randomNum3]}
-                    outcome={outcome}
+                    img1={slotImg[randomNum7]}
+                    img2={slotImg[randomNum8]}
+                    img3={slotImg[randomNum9]}
                     imgArr={slotImg}
                  />
             </div>

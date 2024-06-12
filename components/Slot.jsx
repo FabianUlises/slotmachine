@@ -1,5 +1,7 @@
 class Slot extends React.Component {
     render() {
+        // Getting game outcome text depending on images generated
+        const outcome = this.props.img1 === this.props.img2 && this.props.img1 === this.props.img3 ? <h4>You Win!</h4> : <h4>You Lose!</h4>;
         return (
             // Start of slot container
             <div className="slot">
@@ -13,7 +15,7 @@ class Slot extends React.Component {
                 {/* End of slot image */}
                 {/* Start of slot text */}
                 <div className="slot__text">
-                    {this.props.outcome}
+                    {outcome}
                 </div>
                 {/* End of slot text */}
             </div>
