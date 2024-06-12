@@ -18,5 +18,5 @@ img {
 .slot {
     background-color: orange;
     inline-size: 100%;
-    max-inline-size: 40rem;
+    max-inline-size: 10rem;
 }
