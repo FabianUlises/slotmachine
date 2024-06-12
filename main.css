@@ -1,3 +1,4 @@
+/* Base styles */
 * {
     margin: 0;
     padding: 0;
@@ -19,11 +20,13 @@ img {
     inline-size: 100%;
     object-fit: cover;
 }
+/* Slot container */
 .slot {
     background-color: orange;
     inline-size: 20rem;
     text-align: center;
     }
+    /* Slot image container */
     .slot__img {
         /* block-size: 5rem; */
         display: grid;
@@ -31,6 +34,7 @@ img {
         align-items: center;
         gap: 1rem;
 }
+/* large image */
 .large-cherry {
     inline-size: 80%;
 }
