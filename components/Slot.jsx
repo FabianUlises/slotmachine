@@ -6,9 +6,9 @@ class Slot extends React.Component {
         return (
             <div className="slot">
                 <div className="slot__img">
-                    <img src={this.props.slotImg[randomNum1]} />
-                    <img src={this.props.slotImg[randomNum2]} />
-                    <img src={this.props.slotImg[randomNum3]} />
+                    <img src={this.props.slotImg[randomNum1]} className={randomNum1 === 0 ? 'large-cherry' : null} />
+                    <img src={this.props.slotImg[randomNum2]} className={randomNum2 === 0 ? 'large-cherry' : null} />
+                    <img src={this.props.slotImg[randomNum3]} className={randomNum3 === 0 ? 'large-cherry' : null}/>
                 </div>
                 <div className="slot__text">
                     {

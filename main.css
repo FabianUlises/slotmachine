@@ -8,25 +8,29 @@ html {
     font-family: sans-serif;
 }
 body {
+    min-block-size: 100vh;
     background-color: purple;
     overflow-x: hidden;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 img {
-    inline-size: 4rem;
-    max-block-size: 4rem;
+    inline-size: 100%;
     object-fit: cover;
 }
 .slot {
     background-color: orange;
-    inline-size: 100%;
+    inline-size: 20rem;
     text-align: center;
     }
     .slot__img {
-        block-size: 5rem;
-        display: flex;
-    :not(:last-child) {
-        border-right: 2px solid green;
-    }
+        /* block-size: 5rem; */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        gap: 1rem;
+}
+.large-cherry {
+    inline-size: 80%;
 }
